@@ -1,4 +1,4 @@
-<article class="max-w-full prose dark:prose-invert flex items-center pt-24">
+<div class="hero-wrapper max-w-full prose dark:prose-invert flex items-center py-32">
   <div class="mx-auto md:w-6/12">
     {{ with .Title }}
     <header class="text-center w-full">
@@ -14,16 +14,18 @@
 
     <div class="button text-center">
       <a
-        class="inline-block !rounded-md bg-primary-500 px-4 py-1
+              class="inline-block !rounded-md bg-primary-500 px-4 py-1
           !text-neutral !no-underline hover:!bg-primary-600 dark:bg-primary-500 dark:hover:!bg-primary-600
           text-center mt-4 shadow-lg shadow-primary-600/40"
-        href="packages"
+              href="packages"
       >
         See our packages
       </a>
     </div>
 
   </div>
+</div>
+<article class="max-w-full prose dark:prose-invert flex items-center ">
   <section>{{ .Content | emojify }}</section>
 </article>
 <section>

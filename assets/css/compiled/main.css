@@ -2187,6 +2187,11 @@ body:has(#menu-controller:checked) {
   padding: 0.25rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2250,10 +2255,6 @@ body:has(#menu-controller:checked) {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.pt-24 {
-  padding-top: 6rem;
 }
 
 .pr-4 {
