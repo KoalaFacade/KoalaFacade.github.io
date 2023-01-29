@@ -14,7 +14,21 @@
 [[main]]
   name = "Packages"
   pageRef = "packages"
-  weight = 30
+  weight = 1
+
+[[main]]
+  name = " "
+  URL = "https://github.com/KoalaFacade/KoalaFacade.github.io"
+  weight = 2
+  [main.params]
+    icon = "github"
+    target = "_blank"
+
+[[main]]
+  pageRef = "packages"
+  weight = 100
+  [main.params]
+    action = "appearance"
 
 [[main]]
   identifier = "search"
