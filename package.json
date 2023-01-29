@@ -1,0 +1,13 @@
+{
+  "name": "KoalaFacade.github.io",
+  "version": "0.0.0",
+  "description": "KoalaFacade static page",
+  "repository": "https://github.com/KoalaFacade/KoalaFacade.github.io",
+  "author": "pemudakoding <pemudakoding@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "server": "hugo server -b http://localhost -p 8000",
+    "dev": "NODE_ENV=development node themes/congo/node_modules/tailwindcss/lib/cli.js -c ./themes/congo/tailwind.config.js -i ./themes/congo/assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
+    "build": "NODE_ENV=production node themes/congo/node_modules/tailwindcss/lib/cli.js -c ./themes/congo/tailwind.config.js -i ./themes/congo/assets/css/main.css -o ./assets/css/compiled/main.css --jit"
+  }
+}
