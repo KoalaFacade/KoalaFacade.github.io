@@ -2187,11 +2187,6 @@ body:has(#menu-controller:checked) {
   padding: 0.25rem;
 }
 
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2255,6 +2250,16 @@ body:has(#menu-controller:checked) {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .pr-4 {
@@ -3035,6 +3040,11 @@ body:has(#menu-controller:checked) {
 
   .md\:p-\[10vh\] {
     padding: 10vh;
+  }
+
+  .md\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .md\:px-24 {
