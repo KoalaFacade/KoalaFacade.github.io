@@ -2082,6 +2082,10 @@ body:has(#menu-controller:checked) {
   scroll-behavior: smooth;
 }
 
+.whitespace-normal {
+  white-space: normal;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -2209,8 +2213,8 @@ body:has(#menu-controller:checked) {
      object-position: left;
 }
 
-.p-16 {
-  padding: 4rem;
+.p-6 {
+  padding: 1.5rem;
 }
 
 .p-5 {
@@ -2223,6 +2227,11 @@ body:has(#menu-controller:checked) {
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .px-4 {
@@ -3117,6 +3126,10 @@ body:has(#menu-controller:checked) {
     gap: 2rem;
   }
 
+  .md\:p-8 {
+    padding: 2rem;
+  }
+
   .md\:p-\[10vh\] {
     padding: 10vh;
   }
@@ -3167,6 +3180,10 @@ body:has(#menu-controller:checked) {
 
   .lg\:gap-12 {
     gap: 3rem;
+  }
+
+  .lg\:p-16 {
+    padding: 4rem;
   }
 
   .lg\:p-\[12vh\] {
