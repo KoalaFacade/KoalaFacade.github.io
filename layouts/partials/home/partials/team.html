@@ -1,0 +1,32 @@
+<div class="team p-5">
+  <div class="image">
+    {{- $image := resources.Get .photo }}
+    <img src="{{ $image.RelPermalink }}" alt="Stiven" class="rounded-lg overflow-hidden">
+  </div>
+  <div class="name text-center">
+    <h4 class="text-neutral-200 dark:text-neutral-600">{{ .name }}</h4>
+  </div>
+  <div class="social text-center ">
+    {{ if .twitter }}
+      {{ with .twitter}}
+        <a
+          class="transition-colors dark:text-neutral-600 dark:hover:text-neutral-400 hover:bg-transparent text-primary-500 no-underline	mr-4"
+          href="{{ . }}"
+        >
+          {{ partial "icon.html" "twitter" }}
+        </a>
+      {{ end }}
+    {{ end }}
+
+    {{ if .github }}
+      {{ with .github}}
+        <a
+          class="transition-colors dark:text-neutral-600 dark:hover:text-neutral-400 hover:bg-transparent text-primary-500 no-underline	"
+          href="{{ . }}"
+        >
+          {{ partial "icon.html" "github" }}
+        </a>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>

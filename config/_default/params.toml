@@ -73,3 +73,21 @@ enableCodeCopy = false
   # bing = ""
   # pinterest = ""
   # yandex = ""
+
+
+[[teams]]
+    name = "Stiven Trizky Katuuk"
+    twitter = "https://twitter.com/pemudakoding"
+    github = "https://github.com/pemudakoding"
+    photo = "img/teams/stiven.png"
+
+[[teams]]
+    name = "Kevin Abrar Khansa"
+    twitter = "https://twitter.com/kevariable"
+    github = "https://github.com/kevariable"
+    photo = "img/teams/kevin.png"
+
+[[teams]]
+    name = "Holiq Ibrahim"
+    github = "https://github.com/holiq"
+    photo = "img/teams/holiq.png"

@@ -1,0 +1,14 @@
+<div class="w-full bg-neutral-700 dark:bg-primary-200 p-16 rounded-2xl shadow-lg shadow-neutral-500/40 dark:shadow-primary-200/40">
+  <div class="head">
+    <header class="text-center w-full">
+      <h1 class="text-4xl text-neutral-200 dark:text-neutral-600 mb-0">KoalaFacade's Team</h1>
+    </header>
+    <div class="body-team-wrapper grid grid-cols-3 justify-center w-full gap-12 mt-8">
+      {{ if .Site.Params.teams }}
+        {{ range .Site.Params.teams }}
+          {{ partial "home/partials/team.html" . }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</div>

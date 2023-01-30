@@ -1,5 +1,5 @@
-<div class="hero-wrapper max-w-full prose dark:prose-invert flex items-center py-24 md:py-32">
-  <div class="mx-auto w-full md:w-6/12">
+<div class="hero-wrapper max-w-full prose dark:prose-invert flex items-center flex-col  ">
+  <div class="mx-auto w-full md:w-6/12 my-24 md:my-32">
     {{ with .Title }}
     <header class="text-center w-full">
       <h1 class="text-5xl md:text-6xl lg:text-7xl text-neutral-700  dark:text-primary-400 mb-0">{{ . | emojify }}</h1>
@@ -14,16 +14,18 @@
 
     <div class="button text-center">
       <a
-              class="inline-block !rounded-md bg-primary-500 px-4 py-1
-          !text-neutral !no-underline hover:!bg-primary-600 dark:bg-primary-500 dark:hover:!bg-primary-600
-          text-center mt-4 shadow-lg shadow-primary-600/40"
-              href="packages"
+          class="inline-block !rounded-md bg-primary-500 px-4 py-1
+            !text-neutral !no-underline hover:!bg-primary-600 dark:bg-primary-500 dark:hover:!bg-primary-600
+            text-center mt-4 shadow-lg shadow-primary-600/40
+          "
+          href="packages"
       >
         See our packages
       </a>
     </div>
-
   </div>
+
+  {{ partial "home/our-team.html" . }}
 </div>
 <article class="max-w-full prose dark:prose-invert flex items-center ">
   <section>{{ .Content | emojify }}</section>
