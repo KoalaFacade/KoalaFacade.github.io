@@ -1,7 +1,7 @@
 <div class="team p-5">
   <div class="image">
     {{- $image := resources.Get .photo }}
-    <img src="{{ $image.RelPermalink }}" alt="Stiven" class="rounded-lg overflow-hidden">
+    <img src="{{ $image.RelPermalink }}" alt="{{ .name }}'s photo" class="rounded-lg overflow-hidden">
   </div>
   <div class="name text-center">
     <h4 class="text-neutral-200 dark:text-neutral-600">{{ .name }}</h4>

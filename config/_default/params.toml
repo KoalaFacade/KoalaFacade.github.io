@@ -74,7 +74,15 @@ enableCodeCopy = false
   # pinterest = ""
   # yandex = ""
 
+#Highlighted Package
+[highlightedPackage]
+  title = "Diamond Console"
+  description = "Artisan command package to handle your Domain Driven Design project that suitable with Laravel base structures, made for comer of Domain Driven Design and advanced."
+  imageDark = "img/package/banner-diamond-dark.png"
+  imageLight = "img/package/banner-diamond-light.png"
+  docsURL = "/packages/diamond-console"
 
+# Teams section
 [[teams]]
     name = "Stiven Trizky Katuuk"
     twitter = "https://twitter.com/pemudakoding"
