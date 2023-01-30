@@ -1732,6 +1732,11 @@ body:has(#menu-controller:checked) {
   margin: 0.25rem;
 }
 
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1765,6 +1770,20 @@ body:has(#menu-controller:checked) {
 .my-0 {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.-mx-2 {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .mb-0 {
@@ -2054,6 +2073,10 @@ body:has(#menu-controller:checked) {
   justify-content: space-between;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -2086,6 +2109,10 @@ body:has(#menu-controller:checked) {
   white-space: normal;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -2096,6 +2123,10 @@ body:has(#menu-controller:checked) {
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .rounded-full {
@@ -2227,6 +2258,11 @@ body:has(#menu-controller:checked) {
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .py-12 {
@@ -2427,14 +2463,18 @@ body:has(#menu-controller:checked) {
   line-height: .75rem;
 }
 
-.text-neutral-200 {
-  --tw-text-opacity: 1;
-  color: rgba(var(--color-neutral-200), var(--tw-text-opacity));
+.leading-7 {
+  line-height: 1.75rem;
 }
 
 .text-neutral-700 {
   --tw-text-opacity: 1;
   color: rgba(var(--color-neutral-700), var(--tw-text-opacity));
+}
+
+.text-neutral-200 {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-neutral-200), var(--tw-text-opacity));
 }
 
 .\!text-neutral {
@@ -2563,13 +2603,13 @@ body:has(#menu-controller:checked) {
   border-color: rgba(var(--color-primary-300), var(--tw-border-opacity));
 }
 
+.hover\:bg-transparent:hover {
+  background-color: transparent;
+}
+
 .hover\:\!bg-primary-600:hover {
   --tw-bg-opacity: 1 !important;
   background-color: rgba(var(--color-primary-600), var(--tw-bg-opacity)) !important;
-}
-
-.hover\:bg-transparent:hover {
-  background-color: transparent;
 }
 
 .hover\:bg-primary-600:hover {
@@ -2595,6 +2635,11 @@ body:has(#menu-controller:checked) {
 .hover\:text-primary-600:hover {
   --tw-text-opacity: 1;
   color: rgba(var(--color-primary-600), var(--tw-text-opacity));
+}
+
+.hover\:text-secondary-800:hover {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-secondary-800), var(--tw-text-opacity));
 }
 
 .hover\:text-primary-700:hover {
@@ -2810,6 +2855,10 @@ body:has(#menu-controller:checked) {
   text-align: left;
 }
 
+.dark .dark\:block {
+  display: block;
+}
+
 .dark .dark\:inline {
   display: inline;
 }
@@ -2917,14 +2966,23 @@ body:has(#menu-controller:checked) {
   background-color: rgba(var(--color-secondary-400), 1);
 }
 
-.dark .dark\:text-neutral-600 {
+.dark .dark\:text-neutral-100 {
   --tw-text-opacity: 1;
-  color: rgba(var(--color-neutral-600), var(--tw-text-opacity));
+  color: rgba(var(--color-neutral-100), var(--tw-text-opacity));
 }
 
 .dark .dark\:text-primary-400 {
   --tw-text-opacity: 1;
   color: rgba(var(--color-primary-400), var(--tw-text-opacity));
+}
+
+.dark .dark\:text-neutral-700\/90 {
+  color: rgba(var(--color-neutral-700), 0.9);
+}
+
+.dark .dark\:text-neutral-600 {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-neutral-600), var(--tw-text-opacity));
 }
 
 .dark .dark\:text-neutral-500 {
@@ -2950,11 +3008,6 @@ body:has(#menu-controller:checked) {
 .dark .dark\:text-neutral-800 {
   --tw-text-opacity: 1;
   color: rgba(var(--color-neutral-800), var(--tw-text-opacity));
-}
-
-.dark .dark\:text-neutral-100 {
-  --tw-text-opacity: 1;
-  color: rgba(var(--color-neutral-100), var(--tw-text-opacity));
 }
 
 .dark .dark\:shadow-primary-200\/40 {
@@ -2985,6 +3038,11 @@ body:has(#menu-controller:checked) {
 .dark .dark\:hover\:\!bg-primary-700:hover {
   --tw-bg-opacity: 1 !important;
   background-color: rgba(var(--color-primary-700), var(--tw-bg-opacity)) !important;
+}
+
+.dark .dark\:hover\:text-primary-500:hover {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-primary-500), var(--tw-text-opacity));
 }
 
 .dark .dark\:hover\:text-neutral-400:hover {
@@ -3137,6 +3195,10 @@ body:has(#menu-controller:checked) {
   .md\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 
   .md\:text-6xl {

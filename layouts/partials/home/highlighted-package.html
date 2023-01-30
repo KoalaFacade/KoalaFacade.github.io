@@ -1,0 +1,24 @@
+<div class="py-32">
+  <div class="section-title w-full text-center mb-16">
+    <h1 class="text-4xl text-neutral-700 dark:text-neutral-100 mb-0 ">Highlighted Package</h1>
+  </div>
+  <div class="package-wrapper grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
+    <div class="image">
+      {{- $imageDark := resources.Get  .Site.Params.highlightedPackage.imageDark}}
+      {{- $imageLight := resources.Get  .Site.Params.highlightedPackage.imageLight }}
+      <img src="{{ $imageDark.RelPermalink }}" alt="{{ .Site.Params.highlightedPackage.title }}" class="rounded-lg my-0 overflow-hidden block dark:hidden">
+      <img src="{{ $imageLight.RelPermalink }}" alt="{{ .Site.Params.highlightedPackage.title }}" class="rounded-lg my-0  overflow-hidden hidden dark:block">
+    </div>
+    <div class="package-information h-100">
+        <div class="description">
+          <h1 class=" text-neutral-700  dark:text-primary-400 text-4xl">{{ .Site.Params.highlightedPackage.title }}</h1>
+          <p>
+            {{ .Site.Params.highlightedPackage.description }}
+          </p>
+        </div>
+
+        <a href="{{ .Site.Params.highlightedPackage.docsURL }}" class="hover:bg-transparent hover:text-secondary-800 dark:hover:text-primary-500">See Docs</a>
+    </div>
+  </div>
+
+</div>
