@@ -1,6 +1,20 @@
 ---
 title: "Filament Alertbox"
 date: 2023-01-30T19:32:23+07:00
-draft: true
+draft: false
+summary: "Filament plugin for display a static alert box in your filament forms and widget."
+tags: ['docs', 'laravel', 'filament']
 ---
 
+<img src="https://i.ibb.co/JzJ9Gz4/Personal-design.png" alt="preview of package" width="100%"/>
+
+> Filament plugin for display a static alert box in your filament forms and widget.
+
+## Installation
+You can install the package via composer:
+```bash
+composer require koalafacade/filament-alertbox
+```
+
+## Usage
+For usage the alert box we've to kind of implementation you can go thru the page below.
