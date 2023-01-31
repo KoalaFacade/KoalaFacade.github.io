@@ -1,7 +1,7 @@
 ---
 title: "Filament Crash"
 date: 2023-01-30T19:32:30+07:00
-draft: true
+draft: false
 summary: "Filament plugin to enforce your client to pay your project"
 tags: ['docs', 'filament', 'laravel']
 ---
