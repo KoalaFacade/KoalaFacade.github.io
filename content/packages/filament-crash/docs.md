@@ -10,7 +10,7 @@ tags: ['docs', 'filament', 'laravel']
 ---
 
 {{< alert >}}
-  **Warning!** This package will made your client made to you.
+  **Warning!** This package will make your client scream to you.
 {{< /alert >}}
 
 ## 1. Installation
