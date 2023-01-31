@@ -10,16 +10,20 @@
 # overridden by providing a weight value. The menu will then be
 # ordered by weight from lowest to highest.
 
+[[main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 1
 
 [[main]]
   name = "Packages"
-  pageRef = "packages"
-  weight = 1
+  pageRef = "/packages"
+  weight = 2
 
 [[main]]
   name = " "
   URL = "https://github.com/KoalaFacade/KoalaFacade.github.io"
-  weight = 2
+  weight = 3
   [main.params]
     icon = "github"
     target = "_blank"

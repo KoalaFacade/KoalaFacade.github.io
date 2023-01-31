@@ -5,8 +5,7 @@ draft: false
 summary: "Put alert box to your forms area."
 ---
 
-You can put alert box to your form area like the image below.
-![preview](preview.jpg)
+You can put alert box to your form area like the image above.
 
 ## Usage
 

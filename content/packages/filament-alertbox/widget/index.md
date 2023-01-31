@@ -7,7 +7,6 @@ summary: "Treat alert box as widget and can put anywhere in your Filament"
 
 You can treat alert box as widget as well and put anywhere
 that supported widget placements in your Filament project
-![preview](preview.jpg)
 
 ## Usage
 For implement alert box widget, you can create a widget as usual then inheritance our package class
