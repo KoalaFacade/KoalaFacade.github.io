@@ -1,9 +1,10 @@
 ---
-title: "Filament Alertbox"
+title: "Filament AlertBox"
 date: 2023-01-30T19:32:23+07:00
 draft: false
-summary: "Filament plugin for display a static alert box in your filament forms and widget."
+description: "Filament plugin for display a static alert box in your filament forms and widget."
 tags: ['docs', 'laravel', 'filament']
+keywords: ["filament", "alertbox", "installation"]
 ---
 
 {{< figure

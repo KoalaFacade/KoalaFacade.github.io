@@ -3,6 +3,7 @@ title: "Forms"
 date: 2023-01-31T19:30:10+08:00
 draft: false
 summary: "Put alert box to your forms area."
+keywords: ["filament", "alertbox", "forms"]
 ---
 
 You can put alert box to your form area like the image above.

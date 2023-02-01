@@ -8,7 +8,7 @@ rtl = false
 title = "KoalaFacade"
 description = "KoalaFacade crafts web, boilerplate and package in the laravel ecosystem."
 # copyright = "Copy, _right?_ :thinking_face:"
-keywords = ["laravel", "php", "package", "filament", "ddd"]
+keywords = ["KoalaFacade", "laravel", "php", "package"]
 
 dateFormat = "2 January 2006"
 

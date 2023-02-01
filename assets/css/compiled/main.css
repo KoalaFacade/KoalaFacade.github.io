@@ -1887,6 +1887,10 @@ body:has(#menu-controller:checked) {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .grid {
   display: grid;
 }

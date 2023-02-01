@@ -3,6 +3,7 @@ title: "Widget"
 date: 2023-01-31T19:28:31+08:00
 draft: false
 summary: "Treat alert box as widget and can put anywhere in your Filament"
+keywords: ["filament", "alertbox", "widget"]
 ---
 
 You can treat alert box as widget as well and put anywhere
