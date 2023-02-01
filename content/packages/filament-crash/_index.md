@@ -2,8 +2,9 @@
 title: "Filament Crash"
 date: 2023-01-30T19:32:30+07:00
 draft: false
-summary: "Filament plugin to enforce your client to pay your project"
+description: "Filament plugin to enforce your client to pay your project"
 tags: ['docs', 'filament', 'laravel']
+keywords: ["filament", "crash", "installation"]
 ---
 
 > Filament plugin to enforce your client to pay your project
@@ -13,7 +14,7 @@ tags: ['docs', 'filament', 'laravel']
   **Warning!** This package will make your client scream to you.
 {{< /alert >}}
 
-## 1. Installation
+## Installation
 
 ```bash
 composer require koalafacade/filament-crash
@@ -21,11 +22,11 @@ composer require koalafacade/filament-crash
 
 After the package installed it the package automatically serving the javascript to make blank your filament page base on due date your input.
 
-## 2. Usage
+## Usage
 
 You need to set the due date and the deadline, you can put these in your .env
 
-  ```dotenv
+  ```env
 DUE_DATE="2023-01-17"
 DEADLINE_DAYS=10
   ```

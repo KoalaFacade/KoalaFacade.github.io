@@ -3,10 +3,10 @@ title: "Application"
 date: 2023-02-01T16:48:05+07:00
 draft: false
 summary: "List of aplication commands from KoalaFacade Diamond Console"
-keywords: ["ddd", "aplication"]
+keywords: ["ddd", "diamond console", "aplication"]
 ---
 
-> ist of `application` Commands
+> List of `application` Commands
 
 ## `application:make:request StoreUserRequest User`
 

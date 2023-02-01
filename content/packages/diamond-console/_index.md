@@ -4,7 +4,7 @@ date: 2023-01-30T19:30:27+07:00
 draft: false
 description: "Diamond Console is a package to handle your Domain Driven Design (DDD) based on Laravel"
 tags: ["docs", "laravel", "ddd"]
-keywords: ["ddd", "installation"]
+keywords: ["ddd", "diamond console", "installation"]
 ---
 
 {{< figure

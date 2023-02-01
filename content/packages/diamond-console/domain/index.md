@@ -1,9 +1,9 @@
 ---
 title: "Domain"
-date: 2023-02-01T16:47:03+20:00
+date: 2023-02-01T16:47:20+07:00
 draft: false
 summary: "List of domain commands from KoalaFacade  Diamond Console"
-keywords: ["ddd", "domain"]
+keywords: ["ddd", "diamond console", "domain"]
 ---
 
 > List of `domain` Commands

@@ -3,6 +3,7 @@ title: "License"
 date: 2023-01-31T19:28:22+08:00
 draft: false
 summary: "The MIT License (MIT)"
+keywords: ["filament", "alertbox", "license"]
 ---
 
 MIT License
