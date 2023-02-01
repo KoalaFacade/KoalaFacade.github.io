@@ -2,7 +2,7 @@
 title: "Domain"
 date: 2023-02-01T16:47:20+07:00
 draft: false
-summary: "List of domain commands from KoalaFacade  Diamond Console"
+summary: "Documentation commands for Domain Layer"
 keywords: ["ddd", "diamond console", "domain"]
 ---
 
@@ -66,10 +66,10 @@ use Illuminate\Database\Eloquent\Model;
 class User extends Model
 {
     use HasFactory;
-    
+
     /**
      * @param  $query
-     * 
+     *
      * @return UserBuilder<User>
      */
     public function newEloquentBuilder($query): UserBuilder

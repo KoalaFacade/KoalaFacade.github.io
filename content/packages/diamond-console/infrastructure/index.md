@@ -2,7 +2,7 @@
 title: "Infrastructure"
 date: 2023-02-01T16:47:03+07:00
 draft: false
-summary: "List of infrastructure commands from KoalaFacade  Diamond Console"
+summary: "Documentation commands for Infrastructure Layer"
 keywords: ["ddd", "diamond console", "infrastructure"]
 ---
 

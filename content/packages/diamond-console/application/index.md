@@ -2,43 +2,61 @@
 title: "Application"
 date: 2023-02-01T16:48:05+07:00
 draft: false
-summary: "List of aplication commands from KoalaFacade Diamond Console"
+summary: "Documentation commands for Application Layer"
 keywords: ["ddd", "diamond console", "aplication"]
 ---
 
-> List of `application` Commands
+## Introduction
+Application in Domain Driven Design is a layer that gonna process
+user input, and give user an output so this layer shouldn't contains
+the whole of business logic of your applications.
 
-## `application:make:request StoreUserRequest User`
+## Commands
+  The list of commands that can you use for structuring your Domain Driven Design project.
 
-> Command for generate a Request file
+  ### Request
 
-### Arguments
+  A command to generate request file to your application layer, this command
+  still generate the request file as usual like Laravel did.
+  We just made the command readable and can fit with domain naming.
 
-|  Name  |    Description     |
-|:------:|:------------------:|
-|  Name  | Request class name |
-| Domain |    Domain Name     |
+  #### Command
+  ```bash
+  php artisan application:make:request StoreUserRequest User
+  ```
+  #### Arguments
 
-### Options
+  |  Name  |    Description     |
+  |:------:|:------------------:|
+  |  Name  | Request class name |
+  | Domain |    Domain Name     |
 
-|    Name   |          Description           |
-|:---------:|:------------------------------:|
-| `--force` | Force create the Request class |
+  #### Options
 
-## `application:make:resource UserResource User`
+  |    Name   |          Description           |
+  |:---------:|:------------------------------:|
+  |  --force  | Force create the Request class |
 
-> Command for generate a Resource file
+  ### Resource
 
-### Arguments
+  A command to generate resource file to your application layer, this command
+  still generate the request file as usual like Laravel did.
+  We just made the command readable and can fit with domain naming.
 
-|  Name  |     Description     |
-|:------:|:-------------------:|
-|  Name  | Resource class name |
-| Domain |     Domain Name     |
+  #### Command
+  ```bash
+  php artisan application:make:resource UserResource User
+  ```
+  #### Arguments
 
-### Options
+  |  Name  |     Description     |
+  |:------:|:-------------------:|
+  |  Name  | Resource class name |
+  | Domain |     Domain Name     |
 
-|         Name         |             Description              |
-|:--------------------:|:------------------------------------:|
-| `--model=ModelName`  |   To hint Model class on Resource    |
-|      `--force`       |   Force create the Resource class    |
+  #### Options
+
+  |         Name         |             Description              |
+  |:--------------------:|:------------------------------------:|
+  |   --model=ModelName  |   To hint Model class on Resource    |
+  |      --force         |   Force create the Resource class    |
