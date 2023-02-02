@@ -6,20 +6,34 @@ summary: "Documentation commands for Infrastructure Layer"
 keywords: ["ddd", "diamond console", "infrastructure"]
 ---
 
-> List of `infrastructure` Commands
+## Introduction
 
-## `infrastructure:make:event PostEvent Post`
+Infrastructure Layer in Domain Driven Design is a layer that contains
+external services such as Database, Messaging System, and Email Services etc.
+So mainly this layer contains the whole external services logic.
 
-> Command for generate an Event class to your project.
+## Commands
 
-### Arguments
+The list of commands that can you use for structuring your Domain Driven Design project.
+
+### Event
+
+Command for generate an Event class to your project.
+
+#### Command
+
+```bash
+php artisan infrastructure:make:event PostEvent Post
+```
+
+#### Arguments
 
 |  Name  |   Description    |
 |:------:|:----------------:|
 |  Name  | Event name class |
 | Domain |   Domain Name    |
 
-### Options
+#### Options
 
 |   Name    |         Description          |
 |:---------:|:----------------------------:|
@@ -27,25 +41,33 @@ keywords: ["ddd", "diamond console", "infrastructure"]
 
 ---
 
-## `infrastructure:make:factory RoleFactory User`
+### Factory
 
-> Command for generate a Factory class
+Command for generate a Factory class.
 
 This command would generate two files :
 
 1. Factory Concrete at Infrastructure/{DomainName}/Database/Factories
 2. Factory Contract at Domain/Shared/Contracts/Database/Factories
 
-The bottom of reason why we did this, cause Factories is an Infrastructure component then Domain can't consume any stuff inside Infrastructure, so you can do Dependency Injection at Service Provider for resolve this one.
+The bottom of reason why we did this, cause Factories is an Infrastructure component then
+Domain can't consume any stuff inside Infrastructure, so you can do Dependency Injection
+at Service Provider for resolve this one.
 
-### Arguments
+#### Command
+
+```bash
+php artisan infrastructure:make:factory RoleFactory User
+```
+
+#### Arguments
 
 |  Name  | Description  |
 |:------:|:------------:|
 |  Name  | Factory Name |
 | Domain | Domain Name  |
 
-### Options
+#### Options
 
 |   Name    |          Description           |
 |:---------:|:------------------------------:|
@@ -53,18 +75,24 @@ The bottom of reason why we did this, cause Factories is an Infrastructure compo
 
 ---
 
-## `infrastructure:make:listener PostListener Post`
+### Listener
 
-> Command for generate a Listener class to your project.
+Command for generate a Listener class to your project.
 
-### Arguments
+#### Command
+
+```bash
+php artisan infrastructure:make:listener PostListener Post
+```
+
+#### Arguments
 
 |  Name  |     Description     |
 |:------:|:-------------------:|
 |  Name  | Listener name class |
 | Domain |     Domain Name     |
 
-### Options
+#### Options
 
 |        Name     `    |                      Description                      |
 |:-------------------:|:-----------------------------------------------------:|
@@ -73,20 +101,26 @@ The bottom of reason why we did this, cause Factories is an Infrastructure compo
 
 ---
 
-## `infrastructure:make:mail ApprovedUser User`
+### Mail
 
-> Command for generate a Mail class.
+Command for generate a Mail class.
+This command will generate Mail class into Infrastructure side because this class
+purpose is store to external.
 
-This command will generate Mail class into Infrastructure side because this class purpose is store to external.
+#### Command
 
-### Arguments
+```bash
+php artisan infrastructure:make:mail ApprovedUser User
+```
+
+#### Arguments
 
 |  Name  |   Description   |
 |:------:|:---------------:|
 |  Name  | Mail name class |
 | Domain |   Domain Name   |
 
-### Options
+#### Options
 
 |   Name    |         Description         |
 |:---------:|:---------------------------:|
@@ -94,18 +128,24 @@ This command will generate Mail class into Infrastructure side because this clas
 
 ---
 
-## `infrastructure:make:observer UserObserver User`
+### Observer
 
-> Command for generate an Observer class to your project.
+Command for generate an Observer class to your project.
 
-### Arguments
+#### Command
+
+```bash
+php artisan infrastructure:make:observer UserObserver User
+```
+
+#### Arguments
 
 |  Name  |     Description     |
 |:------:|:-------------------:|
 |  Name  | Observer name class |
 | Domain |     Domain Name     |
 
-### Options
+#### Options
 
 |   Name    |           Description           |
 |:---------:|:-------------------------------:|
@@ -113,20 +153,26 @@ This command will generate Mail class into Infrastructure side because this clas
 
 ---
 
-## `infrastructure:make:seeder UserSeeder User`
+### Seeder
 
-> Command for generate a Seeder class.
+Command for generate a Seeder class.
+This command will generate Seeder class into Infrastructure because this class
+purpose is to insert a test data into table.
 
-This command will generate Seeder class into Infrastructure because this class purpose is to insert a test data into table.
+#### Commadn
 
-### Arguments
+```bash
+php artisan infrastructure:make:seeder UserSeeder User
+```
+
+#### Arguments
 
 |  Name  |         Description         |
 |:------:|:---------------------------:|
 |  Name  |      Seeder name class      |
 | Domain |         Domain Name         |
 
-### Options
+#### Options
 
 |   Name    |               Description               |
 |:---------:|:---------------------------------------:|
@@ -134,20 +180,26 @@ This command will generate Seeder class into Infrastructure because this class p
 
 ---
 
-## `infrastructure:make:provider FactoryServiceProvider User`
+### Provider
 
-> Command for generate a Service Provider class.
+Command for generate a Service Provider class.
+This command will generate Service Provider class into Infrastructure to binds
+between Domain and Infrastructure.
 
-This command will generate Service Provider class into Infrastructure to binds between Domain and Infrastructure.
+#### Command
 
-### Arguments
+```bash
+php artisan infrastructure:make:provider FactoryServiceProvider User
+```
+
+#### Arguments
 
 |  Name  |         Description         |
 |:------:|:---------------------------:|
 |  Name  | Service Provider name class |
 | Domain |         Domain Name         |
 
-### Options
+#### Options
 
 |   Name    |               Description               |
 |:---------:|:---------------------------------------:|
