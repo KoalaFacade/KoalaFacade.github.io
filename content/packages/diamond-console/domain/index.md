@@ -6,20 +6,33 @@ summary: "Documentation commands for Domain Layer"
 keywords: ["ddd", "diamond console", "domain"]
 ---
 
-> List of `domain` Commands
+## Introduction
 
-## `domain:make:action GenerateProfileAction User`
+Domain Layer in Domain Driven Design is a layer that hold the whole of your business logic,
+so this layer like as heart of your application.
 
-> Command for generate an Action inside your Domain directory.
+## Commands
 
-### Arguments
+The list of commands that can you use for structuring your Domain Driven Design project.
+
+### Action
+
+Command for generate an Action inside your Domain directory.
+
+#### Command
+
+```bash
+php artisan domain:make:action GenerateProfileAction User
+```
+
+#### Arguments
 
 |  Name  |    Description    |
 |:------:|:-----------------:|
 |  Name  | Action class name |
 | Domain |    Domain Name    |
 
-### Options
+#### Options
 
 |         Name         |            Description             |
 |:--------------------:|:----------------------------------:|
@@ -27,25 +40,31 @@ keywords: ["ddd", "diamond console", "domain"]
 
 ---
 
-## `domain:make:builder UserBuilder User`
+### Builder
 
-> Command for generate a Query Builder inside your Domain directory.
+Command for generate a Query Builder inside your Domain directory.
 
-### Arguments
+#### Command
+
+```bash
+php artisan domain:make:builder UserBuilder User
+```
+
+#### Arguments
 
 |  Name  |    Description     |
 |:------:|:------------------:|
 |  Name  | Builder class name |
 | Domain |    Domain Name     |
 
-### Options
+#### Options
 
 |        Name         |             Description              |
 |:-------------------:|:------------------------------------:|
 | `--model=ModelName` | To hint Model class on Query Builder |
 |      `--force`      |    Force create the Builder class    |
 
-### Usage
+#### Usage
 
 In your model you can use the builder like the example below.
 
@@ -81,18 +100,24 @@ class User extends Model
 
 ---
 
-## `domain:make:data-transfer-object RoleData User`
+### Data Transfer Object
 
-> Command for generate a Data Transfer Object with plain PHP to your domain directory.
+Command for generate a Data Transfer Object with plain PHP to your domain directory.
 
-### Arguments
+#### Command
+
+```bash
+php artisan domain:make:data-transfer-object RoleData User
+```
+
+#### Arguments
 
 |  Name  |           Description           |
 |:------:|:-------------------------------:|
 |  Name  | Data Transfer Object class name |
 | Domain |           Domain Name           |
 
-### Options
+#### Options
 
 |   Name    |                 Description                 |
 |:---------:|:-------------------------------------------:|
@@ -100,18 +125,24 @@ class User extends Model
 
 ---
 
-## `domain:make:enum Role User`
+### Role
 
-> Command for generate an Enum to your Domain directory.
+Command for generate an Enum to your Domain directory.
 
-### Arguments
+#### Command
+
+```bash
+php artisan domain:make:enum Role User
+```
+
+#### Arguments
 
 |  Name  |   Description   |
 |:------:|:---------------:|
 |  Name  | Enum class name |
 | Domain |   Domain Name   |
 
-### Options
+#### Options
 
 |   Name    |         Description         |
 |:---------:|:---------------------------:|
@@ -119,18 +150,25 @@ class User extends Model
 
 ---
 
-## `domain:make:model User User`
+### Model
 
-> Command for generate a Model inside Shared in Domain directory, all Model will store shared folder since another Domain probably consume the Model at the same time.
+Command for generate a Model inside Shared in Domain directory, all Model will store
+shared folder since another Domain probably consume the Model at the same time.
 
-### Arguments
+#### Command
+
+```bash
+php artisan domain:make:model User User
+```
+
+#### Arguments
 
 |  Name  |   Description    |
 |:------:|:----------------:|
 |  Name  | Model class name |
 | Domain |   Domain Name    |
 
-### Options
+#### Options
 
 |         Name          |                                                       Description                                                        |
 |:---------------------:|:------------------------------------------------------------------------------------------------------------------------:|
@@ -140,19 +178,28 @@ class User extends Model
 
 ---
 
-## `domain:make:value-object ReferralCode User`
+### Value Object
 
-> Command for generate a Value Object class. This command will generate Value Object class into Domain.
+Command for generate a Value Object class.
+This command will generate Value Object class into Domain.
 
-### Arguments
+#### Command
+
+```bash
+php artisan domain:make:value-object ReferralCode User
+```
+
+#### Arguments
 
 |  Name  |         Description         |
 |:------:|:---------------------------:|
 |  Name  |   Value Object name class   |
 | Domain |         Domain Name         |
 
-### Options
+#### Options
 
 |   Name    |               Description               |
 |:---------:|:---------------------------------------:|
 | `--force` |   Force create the Value Object class   |
+
+---
