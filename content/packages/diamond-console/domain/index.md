@@ -125,7 +125,7 @@ php artisan domain:make:data-transfer-object RoleData User
 
 ---
 
-### Role
+### Enum
 
 Command for generate an Enum to your Domain directory.
 

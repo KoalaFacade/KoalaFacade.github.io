@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "server": "hugo server -D -b http://localhost -p 8000",
-    "dev": "NODE_ENV=development node themes/congo/node_modules/tailwindcss/lib/cli.js -c ./themes/congo/tailwind.config.js -i ./themes/congo/assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
-    "build": "NODE_ENV=production node themes/congo/node_modules/tailwindcss/lib/cli.js -c ./themes/congo/tailwind.config.js -i ./themes/congo/assets/css/main.css -o ./assets/css/compiled/main.css --jit"
+    "dev": "NODE_ENV=development node themes/congo/node_modules/tailwindcss/lib/cli.js -c ./themes/congo/tailwind.config.js -i ./assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
+    "build": "NODE_ENV=production node themes/congo/node_modules/tailwindcss/lib/cli.js -c ./themes/congo/tailwind.config.js -i ./assets/css/main.css -o ./assets/css/compiled/main.css --jit"
   }
 }
