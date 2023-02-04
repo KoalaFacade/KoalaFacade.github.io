@@ -12,7 +12,7 @@ autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = true
 
-# robots = ""
+robots = "all"
 
 [header]
   layout = "hybrid" # valid options: basic, hamburger, hybrid, custom
@@ -69,7 +69,7 @@ enableCodeCopy = true
   # domain = "llama.yoursite.com"
 
 [verification]
-  # google = ""
+  google = "0kWHTqvON8YKZqQ5jjqFPh2TBqQ9uoDF_xd-oBofi1U"
   # bing = ""
   # pinterest = ""
   # yandex = ""
