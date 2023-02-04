@@ -42,7 +42,10 @@
         {{ end }}
       {{ end }}
     </section>
-    {{ partial "pagination.html" . }}
+    <footer class="pt-8 max-w-prose print:hidden">
+      {{ partial "sharing-links.html" . }}
+      {{ partial "pagination.html" . }}
+    </footer>
   {{ else }}
     <section class="mt-10 prose dark:prose-invert">
       <p class="py-8 border-t">
