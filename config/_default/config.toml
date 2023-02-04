@@ -12,5 +12,3 @@ summaryLength = 0
 theme = 'congo'
 [outputs]
   home = ["HTML", "RSS", "JSON"]
-
-googleAnalytics = "G-7BBLZFDVB7"
