@@ -17,8 +17,7 @@ The list of commands that can you use for structuring your Domain Driven Design 
 
 ### Action
 
-Command for genebaseURL = "https://koalafacade.github.io/"
-rate an Action inside your Domain directory.
+Command for generate an Action inside your Domain directory.
 
 #### Command
 
