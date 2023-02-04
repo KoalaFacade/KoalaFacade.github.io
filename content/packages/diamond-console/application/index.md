@@ -16,6 +16,31 @@ the whole of business logic of your applications.
 
 The list of commands that can you use for structuring your Domain Driven Design project.
 
+### Data Transfer Object
+
+Command for generate a Data Transfer Object with plain PHP to your application directory.
+
+#### Command
+
+```bash
+php artisan application:make:data-transfer-object RoleData User
+```
+
+#### Arguments
+
+|  Name  |           Description           |
+|:------:|:-------------------------------:|
+|  Name  | Data Transfer Object class name |
+| Domain |           Domain Name           |
+
+#### Options
+
+|   Name    |                 Description                 |
+|:---------:|:-------------------------------------------:|
+| `--force` | Force create the Data Transfer Object class |
+
+---
+
 ### Request
 
 A command to generate request file to your application layer, this command

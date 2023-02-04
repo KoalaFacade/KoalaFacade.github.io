@@ -17,7 +17,8 @@ The list of commands that can you use for structuring your Domain Driven Design 
 
 ### Action
 
-Command for generate an Action inside your Domain directory.
+Command for genebaseURL = "https://koalafacade.github.io/"
+rate an Action inside your Domain directory.
 
 #### Command
 
@@ -97,31 +98,6 @@ class User extends Model
     }
 }
 ```
-
----
-
-### Data Transfer Object
-
-Command for generate a Data Transfer Object with plain PHP to your domain directory.
-
-#### Command
-
-```bash
-php artisan domain:make:data-transfer-object RoleData User
-```
-
-#### Arguments
-
-|  Name  |           Description           |
-|:------:|:-------------------------------:|
-|  Name  | Data Transfer Object class name |
-| Domain |           Domain Name           |
-
-#### Options
-
-|   Name    |                 Description                 |
-|:---------:|:-------------------------------------------:|
-| `--force` | Force create the Data Transfer Object class |
 
 ---
 
