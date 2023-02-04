@@ -100,31 +100,6 @@ class User extends Model
 
 ---
 
-### Data Transfer Object
-
-Command for generate a Data Transfer Object with plain PHP to your domain directory.
-
-#### Command
-
-```bash
-php artisan domain:make:data-transfer-object RoleData User
-```
-
-#### Arguments
-
-|  Name  |           Description           |
-|:------:|:-------------------------------:|
-|  Name  | Data Transfer Object class name |
-| Domain |           Domain Name           |
-
-#### Options
-
-|   Name    |                 Description                 |
-|:---------:|:-------------------------------------------:|
-| `--force` | Force create the Data Transfer Object class |
-
----
-
 ### Enum
 
 Command for generate an Enum to your Domain directory.
