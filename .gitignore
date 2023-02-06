@@ -23,4 +23,6 @@ hugo.linux
 .lighthouseci
 
 # Project specific files
-TODO
+*.lock
+.yarn/
+*.log
