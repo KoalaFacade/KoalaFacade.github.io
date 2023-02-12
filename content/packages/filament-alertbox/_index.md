@@ -22,7 +22,22 @@ You can install the package via composer:
 ```bash
 composer require koalafacade/filament-alertbox
 ```
-
+After the package installed you can configure the tailwind.config.js to make Alert Box styles can fit with your styles
+```js
+module.exports = {
+    content: [
+        './vendor/koalafacade/filament-alertbox/**/*.blade.php'
+    ]
+}
+```
+then build the asset again. 
+```bash
+yarn build
+```
+or 
+```bash
+npm build
+```
 ## Usage
 
 For usage the alert box we've to kind of implementation you can go thru the page below.
