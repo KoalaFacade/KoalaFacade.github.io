@@ -16,7 +16,7 @@ robots = "all"
 
 [header]
   layout = "hybrid" # valid options: basic, hamburger, hybrid, custom
-  logo = "img/koalafacade.png"
+  logo = "img/koalafacade.webp"
   showTitle = false
   showDescription = false
 
@@ -78,8 +78,8 @@ robots = "all"
 [highlightedPackage]
   title = "Diamond Console"
   description = "Artisan command package to handle your Domain Driven Design project that suitable with Laravel base structures, made for comer of Domain Driven Design and advanced."
-  imageDark = "img/package/banner-diamond-dark.png"
-  imageLight = "img/package/banner-diamond-light.png"
+  imageDark = "img/package/banner-diamond-dark.webp"
+  imageLight = "img/package/banner-diamond-light.webp"
   docsURL = "/packages/diamond-console"
 
 # Teams section
@@ -87,15 +87,15 @@ robots = "all"
     name = "Stiven Trizky Katuuk"
     twitter = "https://twitter.com/pemudakoding"
     github = "https://github.com/pemudakoding"
-    photo = "img/teams/stiven.png"
+    photo = "img/teams/stiven.webp"
 
 [[teams]]
     name = "Kevin Abrar Khansa"
     twitter = "https://twitter.com/kevariable"
     github = "https://github.com/kevariable"
-    photo = "img/teams/kevin.png"
+    photo = "img/teams/kevin.webp"
 
 [[teams]]
     name = "Holiq Ibrahim"
     github = "https://github.com/holiq"
-    photo = "img/teams/holiq.png"
+    photo = "img/teams/holiq.webp"

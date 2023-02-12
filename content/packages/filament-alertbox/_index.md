@@ -8,7 +8,7 @@ keywords: ["filament", "alertbox", "installation"]
 ---
 
 {{< figure
-    src="https://i.ibb.co/JzJ9Gz4/Personal-design.png"
+    src="img/package/banner-alertbox.webp"
     alt="Preview Filament AlertBox"
     caption="Preview Filament AlertBox"
     >}}

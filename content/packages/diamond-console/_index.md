@@ -8,7 +8,7 @@ keywords: ["ddd", "diamond console", "installation"]
 ---
 
 {{< figure
-    src="img/package/banner-diamond-dark.png"
+    src="img/package/banner-diamond-dark.webp"
     alt="Diamond Console"
     caption="Diamond Console"
     >}}
