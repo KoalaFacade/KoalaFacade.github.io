@@ -1,4 +1,10 @@
-<div class="team p-5">
+<div
+  data-aos="fade-up"
+  data-aos-offset="200"
+  data-aos-delay="{{ .delay }}"
+  data-aos-duration="1000"
+  data-aos-once="true" class="team p-5"
+>
   <div class="image">
     {{- $image := resources.Get .photo }}
     <img src="{{ $image.RelPermalink }}" alt="{{ .name }}'s photo" class="rounded-lg overflow-hidden">

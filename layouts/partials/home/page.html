@@ -1,18 +1,39 @@
 <div class="hero-wrapper max-w-full prose dark:prose-invert flex items-center flex-col  ">
   <div class="mx-auto w-full md:w-6/12 my-24 md:my-32">
     {{ with .Title }}
-    <header class="text-center w-full">
+    <header 
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="0"
+      data-aos-duration="800"
+      data-aos-once="true"
+      class="text-center w-full"
+    >
       <h1 class="text-5xl md:text-6xl lg:text-7xl text-neutral-700  dark:text-primary-400 mb-0">{{ . | emojify }}</h1>
     </header>
     {{ end }}
 
     {{ with .Site.Params.Description }}
-    <p class="text-center">
+    <p 
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="600"
+      data-aos-duration="800"
+      data-aos-once="true" 
+      class="text-center"
+    >
       {{ . | emojify }}
     </p>
     {{ end }}
 
-    <div class="button text-center">
+    <div 
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="1000"
+      data-aos-duration="1200"
+      data-aos-once="true"
+      class="button text-center"
+    >
       <a
           class="inline-block !rounded-md bg-primary-500 px-4 py-1
             !text-neutral !no-underline hover:!bg-primary-600 dark:bg-primary-500 dark:hover:!bg-primary-600

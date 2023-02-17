@@ -159,7 +159,7 @@ Command for generate a Seeder class.
 This command will generate Seeder class into Infrastructure because this class
 purpose is to insert a test data into table.
 
-#### Commadn
+#### Command
 
 ```bash
 php artisan infrastructure:make:seeder UserSeeder User

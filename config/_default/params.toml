@@ -88,14 +88,17 @@ robots = "all"
     twitter = "https://twitter.com/pemudakoding"
     github = "https://github.com/pemudakoding"
     photo = "img/teams/stiven.webp"
+    delay = 800
 
 [[teams]]
     name = "Kevin Abrar Khansa"
     twitter = "https://twitter.com/kevariable"
     github = "https://github.com/kevariable"
     photo = "img/teams/kevin.webp"
+    delay = 1200
 
 [[teams]]
     name = "Holiq Ibrahim"
     github = "https://github.com/holiq"
     photo = "img/teams/holiq.webp"
+    delay = 1800
