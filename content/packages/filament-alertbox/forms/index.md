@@ -16,9 +16,20 @@ use KoalaFacade\FilamentAlertBox\Forms\Components\AlertBox;
 AlertBox::make()
     ->label(label: 'Oops')
     ->helperText(text: 'please make a payment first.')
-    ->icon(name: 'heroicon-o-exclamation')
     ->warning();
 ```
+
+Probably you wanna customize the icon you can write the code like below
+```php
+use KoalaFacade\FilamentAlertBox\Forms\Components\AlertBox;
+
+AlertBox::make()
+    ->label(label: 'Oops')
+    ->helperText(text: 'please make a payment first.')
+    ->resolveIconUsing(name: 'heroicon-o-x-circle')
+    ->warning();
+```
+
 
 ### Available Methods
 
@@ -26,17 +37,18 @@ These available methods you can use when defining alert box.
 
 ```php
   use Closure;
+  
   /** Set alert title */
   function label(string $label): static;
 
   /** Set alert helper text */
   function label(string $text): static;
 
-  /** define alert icon */
-  function icon(string $name): static;
+  /** define your own alert icon */
+  function resolveIconUsing(string | Closure | null $name): static;
 
   /** define alert type */
-  function primary(): static;
+  function info(): static;
   function warning(): static;
   function success(): static;
   function danger(): static;
