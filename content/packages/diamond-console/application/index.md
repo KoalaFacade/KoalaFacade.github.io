@@ -215,5 +215,23 @@ $resolvedData = ExampleData::resolve(data: $data);
 var_dump($data->roles); 
 ```
 
+#### 4. Clone the existing DTO into new DTO
+Sometimes we want to duplicate the existing DTO but won't to redefined again and again, to solve this we gonna use 
+**Prototype Pattern**
+```php
+use KoalaFacade\DiamondConsole\Foundation\DataTransferObject;
+
+class ExampleData extends DataTransferObject
+{
+    public function __construct(
+        public string | null $firstName,
+        public string | null $lastName = null
+    ) {}
+}
+
+$data = new ExampleData(firstName: 'Kevin'); // fistName: 'Kevin'
+$newData = $data->with(lastName: 'Khansa'); // fistName: 'Kevin', lastName: 'Khansa'
+```
+
 To better understanding how our DTO works may you can take a look to the external package that we would mention, under the hood we're using
 [cuyz/valinor](https://valinor.cuyz.io/latest/getting-started/) to help us automatically map the input data to our DTO. 

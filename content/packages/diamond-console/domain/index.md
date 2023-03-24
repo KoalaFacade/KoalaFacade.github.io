@@ -145,11 +145,11 @@ php artisan domain:make:model User User
 
 #### Options
 
-|         Name          |                                                       Description                                                        |
-|:---------------------:|:------------------------------------------------------------------------------------------------------------------------:|
-| `-m` or `--migration` |                                         Create Migration file when model created                                         |
+|         Name          |                                                    Description                                                     |
+|:---------------------:|:------------------------------------------------------------------------------------------------------------------:|
+| `-m` or `--migration` |                                      Create Migration file when model created                                      |
 |  `-f` or `--factory`  | Create Factory class when Model created this option will generate two files, Factory contract and Factory concrete |
-|      `--force`      |                                               Force create the Model class                                               |
+|       `--force`       |                                            Force create the Model class                                            |
 
 ---
 
