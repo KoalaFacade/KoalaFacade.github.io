@@ -215,8 +215,57 @@ $resolvedData = ExampleData::resolve(data: $data);
 var_dump($data->roles); 
 ```
 
-#### 4. Clone the existing DTO into new DTO
-Sometimes we want to duplicate the existing DTO but won't to redefined again and again, to solve this we gonna use 
+#### 4. Dump and die the current data
+Sometimes we want to debug the incoming data
+
+```php
+use KoalaFacade\DiamondConsole\Foundation\DataTransferObject;
+
+class ExampleData extends DataTransferObject
+{
+    public function __construct(
+        public string | null $firstName,
+        public string | null $lastName = null
+    ) {}
+}
+
+(new ExampleData(firstName: 'Kevin'))->dd() // equals to dd(new ExampleData(firstName: 'Kevin'))
+
+// another way that combined with resolvable
+$data = ['first_name' => 'Kevin'];
+
+(ExampleData::resolve($data)->dd();
+```
+
+#### 5. Keep the code clean by avoid the defining variable
+Sometimes we want to avoid defining the variable by implicit
+```php
+use KoalaFacade\DiamondConsole\Foundation\DataTransferObject;
+
+class ExampleData extends DataTransferObject
+{
+    public function __construct(
+        public string | null $firstName,
+        public string | null $lastName = null
+    ) {}
+}
+
+(new ExampleData(firstName: 'Kevin'))
+    ->tap(callable: function (ExampleData $data): void {
+        $data->dd() // firstName: 'Kevin';
+    });
+
+// another way that combined with resolvable
+$data = ['first_name' => 'Kevin'];
+
+ExampleData::resolve($data)
+    ->tap(callable: function (ExampleData $data): void {
+        $data->dd() // firstName: 'Kevin';
+    });
+```
+
+#### 6. Clone the existing DTO into new DTO
+Sometimes we want to duplicate the existing DTO but won't to redefined again and again, to solve this we gonna use
 **Prototype Pattern**
 ```php
 use KoalaFacade\DiamondConsole\Foundation\DataTransferObject;
