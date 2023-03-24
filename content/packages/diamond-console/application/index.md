@@ -215,6 +215,9 @@ $resolvedData = ExampleData::resolve(data: $data);
 var_dump($data->roles); 
 ```
 
+To better understanding how our DTO works may you can take a look to the external package that we would mention, under the hood we're using
+[cuyz/valinor](https://valinor.cuyz.io/latest/getting-started/) to help us automatically map the input data to our DTO.
+
 #### 4. Dump and die the current data
 Sometimes we want to debug the incoming data
 
@@ -229,12 +232,9 @@ class ExampleData extends DataTransferObject
     ) {}
 }
 
-(new ExampleData(firstName: 'Kevin'))->dd() // equals to dd(new ExampleData(firstName: 'Kevin'))
-
-// another way that combined with resolvable
 $data = ['first_name' => 'Kevin'];
 
-(ExampleData::resolve($data)->dd();
+ExampleData::resolve($data)->dd(); 
 ```
 
 #### 5. Keep the code clean by avoid the defining variable
@@ -250,17 +250,18 @@ class ExampleData extends DataTransferObject
     ) {}
 }
 
+// Approach 1
 (new ExampleData(firstName: 'Kevin'))
     ->tap(callable: function (ExampleData $data): void {
-        $data->dd() // firstName: 'Kevin';
+        // Business Logic
     });
 
-// another way that combined with resolvable
+// Approach 2
 $data = ['first_name' => 'Kevin'];
 
 ExampleData::resolve($data)
     ->tap(callable: function (ExampleData $data): void {
-        $data->dd() // firstName: 'Kevin';
+        // Business Logic
     });
 ```
 
@@ -281,6 +282,3 @@ class ExampleData extends DataTransferObject
 $data = new ExampleData(firstName: 'Kevin'); // fistName: 'Kevin'
 $newData = $data->with(lastName: 'Khansa'); // fistName: 'Kevin', lastName: 'Khansa'
 ```
-
-To better understanding how our DTO works may you can take a look to the external package that we would mention, under the hood we're using
-[cuyz/valinor](https://valinor.cuyz.io/latest/getting-started/) to help us automatically map the input data to our DTO. 
